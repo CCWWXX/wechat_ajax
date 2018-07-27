@@ -24,7 +24,7 @@ let data = {};
 | param | type | description |
 | ---------- | --------- | -------- |
 | _url | String | 请求地址 |
-| _type | String | 请求类型 |
+| _methos | String | 请求类型 |
 | _data | Object | 请求数据 |
 | callback | Function| 请求成功回调 |
 | failcallback | Function| 请求失败回调，可不写，默认为提示服务器开小差 |
