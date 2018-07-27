@@ -1,6 +1,6 @@
 const app = getApp();
-let request = (_url, _type, _data, callback, failcallback ) => {
-  
+let request = (_url, _method, _data, callback, failcallback ) => {
+
   wx.showLoading()
   let host = app.globalData.host
   if (host) {
@@ -10,7 +10,7 @@ let request = (_url, _type, _data, callback, failcallback ) => {
   }
   wx.request({
     url: url,
-    method: _type,
+    method: _method,
     data: _data,
     header: {
       'content-type': 'application/json',
