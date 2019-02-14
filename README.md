@@ -7,11 +7,9 @@ let data = {};
   api.request(
           '/the/path', 
           "POST", 
-          { 
-            data
-          }, 
+          data, 
           res => {
-            console(res)
+            console.log(res)
           },
           failRes => {
             console.log(failRes)
